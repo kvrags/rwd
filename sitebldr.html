@@ -406,14 +406,14 @@ The Kadumane Hills Estate, surrounded by forests and lush green paddy fields hea
   </div>
 </div>
 
-<div id="Map"></div>
+<div id="map"></div>
 
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
 var myCenter = new google.maps.LatLng(12.940960, 75.781728);
 
-function initialize() {
+function initMap() {
 var mapProp = {
 center:myCenter,
 zoom:12,
@@ -431,7 +431,7 @@ position:myCenter,
 marker.setMap(map);
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+<!--google.maps.event.addDomListener(window, 'load', initialize); --->
 </script>
 
 <!-- Footer -->
